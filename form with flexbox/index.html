@@ -5,35 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>Document</title>
+    <title>Contact Form - Pedro Contesini</title>
 </head>
 <body>
+    <div id="loader-overlay" class="d-none">
+        <div class="loader"></div>
+      </div>
     <form class="container"> 
-        <h1>Entre em contato</h1>
+        <h1>Get in Touch</h1>
         <div class="container-top">
             <div class="text-up-left">
-                <h2> Nome:</h2> 
-                <input type="text" placeholder="Digite seu nome" autofocus>
+                <h2> Name:</h2> 
+                <input type="text" placeholder="Digite seu nome" autofocus class="name">
                 
             </div>
             <div class="text-up-right">
                 <h2> E-mail</h2>
-                <input type="text" placeholder="Digite seu e-mail">
+                <input type="text" placeholder="Digite seu e-mail" class="mail">
             </div>
         </div>
     </br>
 
         <div class="container-middle">    
-            <h2>Endereço</h2>
-            <input type="text" placeholder="Digite seu endereço">
+            <h2>Adress</h2>
+            <input type="text" placeholder="Digite seu endereço" class="adress">
         </br></br>
-            <h2> Mensagem</h2>
-            <textarea class="input-resize"> Digite sua mensagem</textarea>
+            <h2> Message</h2>
+            <textarea class="input-resize" placeholder="Digite sua mensagem"></textarea>
         </div>
-    </br>
+    </br> <span></span>
+    <ul class="form-response"></ul>
         <div class="container-bottom">
-            <button type="reset" value="Reset" class="clean">Limpar</button>
-            <button class="send">Enviar</button>
+            <button type="reset" value="Reset" class="clean">Clean</button>
+            <button class="send">Send</button>
         </div>
 
 

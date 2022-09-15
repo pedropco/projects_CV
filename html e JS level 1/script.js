@@ -25,7 +25,7 @@ function horas(){
     let hours = now.getHours()
     if (hours > 0  && hours < 12) {
         document.querySelector('.greet').innerHTML = 'Bom dia, ';
-    } else if ( hours > 12 && hours < 18) { 
+    } else if ( hours >= 12 && hours < 18) { 
         document.querySelector('.greet').innerHTML = 'Boa tarde, ';
     } else { 
         document.querySelector('.greet').innerHTML = 'Boa noite, ';

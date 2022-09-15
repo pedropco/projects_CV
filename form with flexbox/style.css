@@ -116,6 +116,49 @@ button.send{
     }
 }
 
+span {
+    display: none;
+    color: red;
+}
+
+.error_message {
+    font-size: 0.6rem;
+    color: red;
+}
+.success_message {
+    font-size: 0.6rem;
+    color: green;
+}
+
+#loader-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid rgb(27, 120, 170); /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 /*@media (max-width:450px) {
     .container {
         max-width: 100%;

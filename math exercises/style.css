@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+}
+.bmi_calc{
+    margin: auto;
+    flex-direction: column;
+    background-color: rgb(46, 219, 238);
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+form {
+    margin: auto;
+}
+input {
+    width: 170px;
+    font-size: 15px;
+}
+input.enviar{
+    width: 179px;
+    background-color: orange;
+}
+
+.average_calc{
+    margin: auto;
+    flex-direction: column;
+    background-color:darkgreen;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(50, 49, 49);
+}
