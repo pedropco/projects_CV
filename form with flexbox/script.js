@@ -3,10 +3,17 @@ const spanform = document.querySelector('span')
 const mailForm = document.querySelector('.mail')
 const adressForm = document.querySelector('.adress')
 const textMessage = document.querySelector('.input-resize')
+const checkbox = document.querySelector('.contrato')
 
+//events
 document.querySelector('.send').addEventListener('click', checkContent)
+document.querySelector('.clean').addEventListener('click', clearFormResponse)
+
+//functions
 
 function checkContent(e){ 
+    if(checkbox.checked){ 
+        
     e.preventDefault()
 
     showLoading(true)
@@ -42,6 +49,13 @@ function checkContent(e){
     
         showLoading(false);  
       }, 500);
+    }
+    else {
+        e.preventDefault()
+        clearFormResponse()
+        displayMessage('Check the checkbox above', false)
+       
+    }
 }
 
 function showLoading(loading = false){
@@ -70,6 +84,29 @@ function displayMessage(message, sucess_message = false){
 
 
 
+
+//different codes tested and implemented
+    
+// function checkBox(){
+//     if (checkbox.checked){
+//         document.querySelector('.send').removeAttribute('disabled')
+//     } else {
+//         document.querySelector('.send').setAttribute('disabled', true)
+//     }
+// }
+
+
+
+// checkSend()
+// function checkSend(){
+
+//     let btn_send = document.querySelector('.send')
+//     if (btn_send.hasAttribute('disabled')){
+//         btn_send.classList.add('error_message')
+//     } else {
+//         btn_send.classList.remove('error_message')
+//     }
+// }
 //for disable the button of send
 /*
 function disableButton(){
