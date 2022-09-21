@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(images/cuteanimals.jpg);
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.composition {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monkey {
+    left: 30%;
+    bottom:16%;
+}
+.lion{
+    bottom:12%;
+    right:53%;
+}
+.bear {
+    left: 38%;
+    bottom: 20%;
+}
+
+.elephant{
+    bottom:22%;
+    right:36%;
+}
+.active {
+    border: 5px solid yellow;
+}

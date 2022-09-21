@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals and Sounds - Pedro Contesini</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Type the first letter of the animal's name for sound</h1>
+    <div class="balls">
+        <div class="ball lion" key-sound="keyl">L</div>
+        <div class="ball monkey" key-sound="keym">M</div>
+        <div class="ball elephant" key-sound="keye">E</div>
+        <div class="ball bear" key-sound="keyb">B</div>
+    </div>
+    <div class="composition">
+        
+    <input placeholder="Type several letters for animals 'composition'"> 
+    <button>Generate animal composition</button>
+    </div>
+
+    <audio id="keyl" src="sounds/lion.wav"></audio>
+    <audio id="keym" src="sounds/monkey.wav"></audio>
+    <audio id="keye" src="sounds/elephant.mp3"></audio>
+    <audio id="keyb" src="sounds/bear.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

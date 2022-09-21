@@ -4,6 +4,7 @@ const mailForm = document.querySelector('.mail')
 const adressForm = document.querySelector('.adress')
 const textMessage = document.querySelector('.input-resize')
 const checkbox = document.querySelector('.contrato')
+checkbox.required 
 
 //events
 document.querySelector('.send').addEventListener('click', checkContent)
@@ -53,7 +54,7 @@ function checkContent(e){
     else {
         e.preventDefault()
         clearFormResponse()
-        displayMessage('Check the checkbox above', false)
+        checkMessage('Check the checkbox above')
        
     }
 }
@@ -82,6 +83,13 @@ function displayMessage(message, sucess_message = false){
     document.querySelector('.form-response').appendChild(message_li)
     }
 
+function checkMessage(message){
+    let new_node = document.createElement('li')
+    new_node.classList.add('error_message')
+    new_node.innerHTML = message;
+    let form_response = document.querySelector('.form-response')
+    form_response.insertBefore(new_node, null)
+}
 
 
 
