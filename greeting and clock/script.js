@@ -12,7 +12,7 @@ setInterval(myTimer, 1000);
 
 //getting name and filling bom dia xxx
 function qualSeuNome(){
-    const namePerson = prompt("qual seu nome?", "Digite aqui");
+    const namePerson = prompt("What's your name?", "Type here");
     document.querySelector('.name').innerHTML = namePerson;
 }
 
@@ -24,11 +24,11 @@ function horas(){
     let now = new Date
     let hours = now.getHours()
     if (hours > 0  && hours < 12) {
-        document.querySelector('.greet').innerHTML = 'Bom dia, ';
+        document.querySelector('.greet').innerHTML = 'Good morning, ';
     } else if ( hours >= 12 && hours < 18) { 
-        document.querySelector('.greet').innerHTML = 'Boa tarde, ';
+        document.querySelector('.greet').innerHTML = 'Good afternoon, ';
     } else { 
-        document.querySelector('.greet').innerHTML = 'Boa noite, ';
+        document.querySelector('.greet').innerHTML = 'Good nigth, ';
     }
 } 
 
