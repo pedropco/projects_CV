@@ -5,7 +5,7 @@ body {
 .container{
     margin: auto;
     width: 600px;
-    height: 300px;
+    height: 400px;
     border: 3px solid black;
     background-image: url(background.jpg);
     background-size: cover;
@@ -13,10 +13,10 @@ body {
 }
 .dino {
     position: relative;
-    top: 225px;
-    width: 75px;
-    height: 75px;
-    background-image: url(dino.png);
+    top: 145px;
+    width: 105px;
+    height: 255px;
+    background-image: url(auroraeananda.png);
     background-size: cover;
 }
 .jump-animation {
@@ -24,10 +24,10 @@ body {
 }
 .rock {
     position: relative;
-    top: 175px;
-    left: 550px;
-    width: 50px;
-    height: 50px;
+    top: 75px;
+    left: 525px;
+    width: 70px;
+    height: 70px;
     background-image: url(rock.png);
     background-size: cover;
 }
@@ -44,16 +44,16 @@ h1{
     animation: rolling infinite linear 1.9s;
 }
 .rolling-faster {
-    animation: rolling infinite linear 1.3s;
+    animation: rolling infinite linear 1.4s;
 }
 
 @keyframes rolling {
-    0%{left: 550px}
+    0%{left: 600px}
     100%{left: -50px}
 }
 
 @keyframes jump {
-    0%{top: 225px}
-    50%{top: 120px}
-    100%{top: 225px}
+    0%{top: 145px}
+    50%{top: -5px}
+    100%{top: 145px}
 }

@@ -51,7 +51,7 @@ function dinoRockShock(){
     const dinoposition = parseInt(window.getComputedStyle(dino, null).getPropertyValue('top'))
     const rockposition = parseInt(window.getComputedStyle(rock, null).getPropertyValue('left'))
 
-    if(dinoposition >= 175 && rockposition <= 50 && rockposition > 0){
+    if(dinoposition >= 95 && rockposition <= 50 && rockposition > 0){
         alert('game over');
         location.reload()
     }
@@ -63,5 +63,5 @@ setTimeout (function rollFast(){
     if(rock.classList.contains('rolling')){
     rock.classList.remove('rolling')
     rock.classList.add('rolling-faster')}
-}, 7000)
+}, 12600)
 
