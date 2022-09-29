@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    font-family: 'Inter Tight', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+.title{
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    margin-top: 20px;
+    font-size: 40px;
+    width: 94%;
+    text-align: center;
+}
+.title button{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 10%;
+}
+
+.textInsert{
+    background-color: lightgrey;
+    display: flex;
+    padding: 10px;
+    border: 20px;
+    width: 90%;
+}
+.inputText{
+    width: 90%;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+}
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.bxs-plus-circle {
+
+    font-size: 25px;
+    margin-left: 10px;
+    background-color: rgb(14, 70, 223);
+    border-radius: 30%;
+    padding: 5px;
+      
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+li {
+    list-style-type: none;
+}
+    
+.line-through {
+    text-decoration: line-through;
+}
