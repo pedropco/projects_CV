@@ -86,3 +86,5 @@ function removeItem(i) {
   itensDB.splice(i, 1)
   updateDB()
 }
+
+loadItens()
